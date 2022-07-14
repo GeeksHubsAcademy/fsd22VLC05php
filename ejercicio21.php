@@ -1,13 +1,25 @@
 <?php
-    function countdownDays($date) {
-        $today = new DateTime();
+declare(strict_types=1);
 
-        $eventDate = new DateTime($date);
+function sum(float $a, float $b) {
 
-        $daysLeft = $today->diff($eventDate);
-
-
-        return $daysLeft->days;
+    if(is_int($a)) {
+        echo 'is INT';
+    } else {
+        // return 'El numer';
     }
 
-    echo countdownDays('02-06-2023');
+    return $a + $b;
+}
+
+
+$a = [[3,4,5],2,3];
+
+// echo $a[0];
+
+// print_r($a)
+
+var_dump(sum(1, 2));
+
+var_dump(sum(1.5, 2.5));
+?>
