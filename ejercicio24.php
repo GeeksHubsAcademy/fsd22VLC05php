@@ -2,8 +2,11 @@
 
     class PoligonoRegular
     {
+        const VALOR_IVA = 0.21;
+        const NOMBRE = "DANI";
+
         public int $lado = 4;
-        public float $medida = 2.5;
+        protected float $medida = 2.5;
 
         public function getLado()
         {
@@ -44,8 +47,12 @@
     }
 
     $poligonoRegular1 = new PoligonoRegular();
-    $poligonoRegular2 = new PoligonoRegular();
-    $poligonoRegular3 = new PoligonoRegular();
+
+    var_dump($poligonoRegular1->lado);
+    var_dump($poligonoRegular1->getMedida());
+
+    // $poligonoRegular2 = new PoligonoRegular();
+    // $poligonoRegular3 = new PoligonoRegular();
 
     // var_dump($poligonoRegular1);
 
@@ -56,7 +63,7 @@
     // $perimetro = $poligonoRegular1->lado * $poligonoRegular1->medida;
     // var_dump($perimetro);
 
-    var_dump($poligonoRegular1->perimetro());
+    // var_dump($poligonoRegular1->perimetro());
 
 
     // $poligonoRegular1->setMedida(5555);
